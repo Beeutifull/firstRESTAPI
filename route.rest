@@ -1,0 +1,27 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/63812320729918c1ac01cb0d
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "subscribedToChannel": "najjaci",
+    "name": "Stefan"
+}
+
+
+###
+DELETE  http://localhost:3000/subscribers/63812320729918c1ac01cb0d
+
+###
+PATCH  http://localhost:3000/subscribers/63821bb545c00a939c581349
+Content-Type: application/json
+
+{
+    "name": "Nemanja"
+}
